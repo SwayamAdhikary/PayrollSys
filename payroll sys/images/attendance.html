@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Employee Attendance</title>
+  <style>
+    body {
+      background-image: url("ucil.png");
+      background-size: cover;
+      background-position: 370px 0px;
+      background-color: #133786;
+      background-repeat: no-repeat;
+      background-size: 50% auto;
+    }
+    h1 {
+      font-size: 40px;
+      color: white;
+      text-align: center;
+      margin-top: 10px;
+      font-weight: 100;
+      opacity: 0.9;
+    }
+    form {
+      opacity: 0.9;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+    }
+    .input-row {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .input-row label {
+      width: 120px;
+      color: white;
+      margin-right: 10px;
+    }
+    .input-row select,
+    .input-row input[type="text"] {
+      padding: 10px;
+      width: 200px;
+      border-radius: 5px;
+      border: none;
+    }
+    .submit-button {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    button[type="submit"] {
+      padding: 15px 30px;
+      background-color: white;
+      border: none;
+      color: black;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Employee Attendance</h1>
+  <form>
+    <div class="input-row">
+      <label for="empId">EmpId:</label>
+      <input type="text" name="empId" id="empId">
+    </div>
+    <div class="input-row">
+      <label for="empName">Emp Name:</label>
+      <input type="text" name="empName" id="empName">
+    </div>
+    <div class="input-row">
+      <label for="month">Month:</label>
+      <select name="month" id="month">
+        <option value="">Select Month</option>
+        <option value="January">January</option>
+        <option value="February">February</option>
+        <option value="March">March</option>
+        <option value="April">April</option>
+        <option value="May">May</option>
+        <option value="June">June</option>
+        <option value="July">July</option>
+        <option value="August">August</option>
+        <option value="September">September</option>
+        <option value="October">October</option>
+        <option value="November">November</option>
+        <option value="December">December</option>
+
+        <!-- Add more months as needed -->
+      </select>
+    </div>
+    <div class="input-row">
+      <label for="attendance">Attendance:</label>
+      <input type="text" name="attendance" id="attendance">
+    </div>
+    <div class="input-row">
+      <label for="leaves">Leaves:</label>
+      <input type="text" name="leaves" id="leaves">
+    </div>
+    <div class="submit-button">
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Select Service</title>
+  <style>
+    body {
+      background-image: url("ucil.png");
+      background-size: cover;
+      background-position: 370px 0px;
+      background-color: #133786;
+      background-repeat: no-repeat;
+      background-size: 50% auto;
+    }
+
+    h1 {
+      font-size: 50px;
+      color: white;
+      text-align: center;
+      margin-top: 150px;
+      font-weight: lighter;
+      opacity: 0.9;
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+    }
+
+    .button-container div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .button-container button {
+      padding: 25px 40px;
+      background-color: white;
+      border: none;
+      color: black;
+      border-radius: 5px;
+      margin: 25px;
+      cursor: pointer;
+      width: 400px;
+      opacity: 0.7;
+      font-size: 20px;
+    }
+
+    /* Media Query for Mobile Devices */
+    @media (max-width: 767px) {
+      body {
+        background-position: center;
+        background-size: cover;
+      }
+
+      .button-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .button-container div {
+        margin-top: 20px;
+      }
+
+      .button-container button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Select Service</h1>
+  <div class="button-container">
+    <div>
+      <button>Add new employee</button>
+      <button>Update employee details</button>
+      <button>Update employee attendance</button>
+    </div>
+    <div>
+      <button>Get employee details</button>
+      <button>Get employee payslip</button>
+      <button>Update employee allowance</button>
+    </div>
+  </div>
+</body>
+</html>
